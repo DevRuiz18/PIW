@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style-cadastro.css">
+</head>
+<body>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img class="img_logo" src="/img/logo.png"></h1>
+                <nav>
+                     <ul>
+                        <li><a class="lista" href="index.html">Home</a></li>
+                        <li><a class="lista" href="produtos.html">Produtos</a></li>
+                        <li><a class="lista" href="cadastro.html">Cadastro</a></li>
+                        <li><a class="lista" href="cadastro.html">Contatos</a></li>
+                        <li><a class="lista" href="ensaiosAnteriores.html">Ensaios Anteriores</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <main>
+        <div>
+                
+            <form>
+                <label class="rotulo" for="nomeSobrenome">Nome e Sobrenome</label>
+                <input type="text" id="nomeSobrenome" required class="input-padrao">
+
+                <label class="rotulo" for="email">E-mail</label>
+                <input type="email" id="email" class="input-padrao" required required placeholder="seuemail@seudominio.com">
+
+                <fieldset>
+                    <legend>Assunto</legend>
+                    <select>
+                        <option value="sg">Sugestões</option>
+                        <option value="rc">Reclamação</option>
+                        <option value="eg">Elogios</option>
+                        <option value="ot">Outros</option>
+                    </select>
+                </fieldset>
+                <br>
+
+                <label for="mesagem">Mensagem</label>
+                <textarea id="mensagem" cols="72" rows="10" required class="input-padrao" required></textarea>
+
+                <input type="submit" value="Enviar" class="enviar">
+            </form>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="copyright">
+            <p> &copy Copyright Leticia Escaliante Fotografias - 2021</p><br>
+            <address>
+                Contato:<br><br>
+                Instagram: @leticia.escaliante_fotografias<br><br>
+                E-mail: leticia_fotografias@gmail.com<br><br>
+                WhatsApp: +55 18 996761800
+            </address>
+        </div>
+    </footer>
+
+</body>
+</html>

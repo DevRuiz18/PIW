@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style-cadastro.css">
+</head>
+<body>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img class="img_logo" src="/img/logo.png"></h1>
+                <nav>
+                     <ul>
+                        <li><a class="lista" href="index.html">Home</a></li>
+                        <li><a class="lista" href="produtos.html">Produtos</a></li>
+                        <li><a class="lista" href="cadastro.html">Cadastro</a></li>
+                        <li><a class="lista" href="contato.html">Contato</a></li>
+                        <li><a class="lista" href="ensaiosAnteriores.html">Ensaios Anteriores</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <main>
+        <div>
+                
+            <form  method="get" action="." onsubmit="isValidCPF()">
+                <label class="rotulo" for="nomeSobrenome">Nome e Sobrenome</label>
+                <input type="text" required id="nomeSobrenome" class="input-padrao">
+
+                <label class="rotulo" for="data">Data de Nascimento</label>
+                <input input type="date" id="nascimento" name="nascimento" class="input-padrao" onblur="validadata()">
+
+
+                <label class="rotulo" for="email">E-mail</label>
+                <input type="email" id="email" class="input-padrao" required required placeholder="seuemail@seudominio.com">
+
+                <label class="rotulo" for="cep">CEP</label>
+                <input type="text" id="cep" class="input-padrao" required  placeholder="XXXXX-XXX" maxlength="9" onblur="pesquisacep(this.value);" onkeypress="return onlynumber();">
+
+                <label class="rotulo" for="rua">Rua</label>
+                <input type="text" name="rua" id="rua" class="input-padrao" required  placeholder="Nome da Rua">
+                
+                <label class="rotulo" for="numero">Número</label>
+                <input type="text" name="numero" id="numero" class="input-padrao" required  placeholder="Numero do Logradouro">
+
+                <label class="rotulo" for="bairro">Bairro</label>
+                <input type="text" name="bairro" id="bairro" class="input-padrao" required  placeholder="Nome do Bairro">
+
+                <label class="rotulo" for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade" class="input-padrao" required  placeholder="Nome da Cidade">
+
+                <label class="rotulo" for="uf">UF</label>
+                <input type="text" name="uf" id="uf" class="input-padrao" required  placeholder="Nome do Estado">
+
+                <label class="rotulo" for="complemento">Complemento</label>
+                <input type="text" name="complemento" id="complemento" class="input-padrao" required  placeholder="Apto. 1, Bloco A, ...">
+
+
+                <label class="rotulo" for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required  placeholder="+XX (XX) XXXXX-XXXX">
+
+                <label class="rotulo" for="cpf">CPF</label>
+                <input type="text" id="cpf" class="input-padrao" required  placeholder="XXX.XXX.XXX - XX" onblur="validarCPF(this)" onkeypress="return onlynumber();">
+                
+                <label class="rotulo" for="senha">Senha</label>
+                <input id="idSenha" type="password" inputmode="numeric" minlength="8" class="input-padrao" required  placeholder="XXXXXXXX" onkeypress="return onlynumber();">
+
+                <input type="submit" value="Enviar" class="enviar">
+            </form>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="copyright">
+            <p> &copy Copyright Leticia Escaliante Fotografias - 2021</p><br>
+            <address>
+                Contato:<br><br>
+                Instagram: @leticia.escaliante_fotografias<br><br>
+                E-mail: leticia_fotografias@gmail.com<br><br>
+                WhatsApp: +55 18 996761800
+            </address>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/js/formulario.js"></script>
+</body>
+</html>
